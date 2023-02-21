@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./listado-tareas.component.css']
 })
 export class ListadoTareasComponent {
-
+tareas : Array<string> =["Barrer", "Cosinar", "Traper"]
 }
