@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Tarea } from '../interfaces/tareas.interface';
+import { TareasService } from '../services/tareas.service';
 
 @Component({
   selector: 'app-listado-tareas',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./listado-tareas.component.css']
 })
 export class ListadoTareasComponent {
-tareas : Array<string> =["Barrer", "Cosinar", "Traper"]
+  constructor(private tareasServices: TareasService){
+  }
+
+get tareas(){
+  return this.tareasServices.tareas;
+}
+
+delete(tarea: Tarea){
+  this.tareasServices.deleteTareas(tarea.tarea);
+}
+
 }
