@@ -19,4 +19,8 @@ delete(tarea: Tarea){
   this.tareasServices.deleteTareas(tarea.tarea);
 }
 
+completed(tarea: Tarea){
+this.tareasServices.completedTareas(tarea.tarea);
+}
+
 }

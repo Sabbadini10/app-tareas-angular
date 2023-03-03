@@ -29,4 +29,13 @@ export class TareasService {
  deleteTareas(nombreTarea: string){
   this.tareas = this.tareas.filter(tarea => tarea.tarea !== nombreTarea)
 }
+
+completedTareas(nombreTarea: string){
+    const tarea: Tarea = this.tareas.find(tarea => {
+  return tarea.tarea === nombreTarea
+})!
+
+tarea.completada = !tarea.completada
+console.log(tarea)
+}
 }
