@@ -38,4 +38,6 @@ completedTareas(nombreTarea: string){
 tarea.completada = !tarea.completada
 console.log(tarea)
 }
+
+
 }

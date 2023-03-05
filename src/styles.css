@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background:#4B4453;
+    height: calc(122vh - 140px);
+}

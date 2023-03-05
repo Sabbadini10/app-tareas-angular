@@ -23,4 +23,5 @@ completed(tarea: Tarea){
 this.tareasServices.completedTareas(tarea.tarea);
 }
 
+
 }
